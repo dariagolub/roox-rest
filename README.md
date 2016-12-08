@@ -21,15 +21,15 @@ Authorization: Bearer {customerId}
 Examples:
 ```
 # Returns customer info
-curl -X GET http://localohost:8080/customerapi/{customerId}
+curl -X GET http://localhost:8080/customerapi/{customerId}
 #  Returns list of partner mappings of customer
-curl -X GET http://localohost:8080/customerapi/{customerId}/mappings
+curl -X GET http://localhost:8080/customerapi/{customerId}/mappings
 # Create partner mapping for customer, where {"mapping": "data"} actual mapping object
-curl -X POST -d '{"mapping": "data"}' http://localohost:8080/customerapi/{customerId}/mappings
+curl -X POST -d '{"mapping": "data"}' http://localhost:8080/customerapi/{customerId}/mappings
 # Update mapping
-curl -X PUT -d {mapping} http://localohost:8080/customerapi/{customerId}/mappings/{mappingId}
+curl -X PUT -d {mapping} http://localhost:8080/customerapi/{customerId}/mappings/{mappingId}
 # Delete partner mapping
-curl -X DELETE http://localohost:8080/customerapi/{customerId}/mappings/{mappingId}
+curl -X DELETE http://localhost:8080/customerapi/{customerId}/mappings/{mappingId}
 ```
 Mapping json example:
 
